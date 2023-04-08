@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(156, 224, 236);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    margin: 20px;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 15px;
+}
+.navbar ul li a{
+    text-decoration:none ;
+    padding: 40px;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: rgb(59, 31, 218);
+    text-shadow: 3px 6px 7px rgb(30, 6, 240);
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(250, 235, 215, 0.288);
+    height: 850px;
+    justify-content: center;
+    align-items:center ;
+    color: black;
+
+}
+#home::before{
+    content:"" ;
+    position: absolute;
+    background-image:url(https://images3.alphacoders.com/695/695428.jpg) ;
+    height: 850px;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+.main{
+    border: 1px solid rgb(235, 133, 201);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left:20%;
+    top: 30%;
+}
+.heading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+.btn{
+    padding: 10px 30px;
+    background-color:transparent ;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    box-shadow:0 0 5px white,0 0 10px white,0 0 15px white ;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+
+}
+#pic img{
+    width:200px ;
+    height:200px ;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+    padding: 20px;
+}
+#project{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    align-items: center;
+    padding: 20px;
+}
+.gallery{display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery img{
+    width: 360px;
+    height: 250px;
+    margin: 10px;
+}
+.gallery img:hover{
+    width: 380px;
+    transition: .6s;
+    border-radius: 50px;
+}
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.row{
+    display:flex ;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+    border: 1px solid pink;
+    border-radius: 15px;
+    background: linear-gradient(to top,black 70%,red 20%);
+    background-size: 100% 200%;
+    transition: all 0.8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: rgb(39, 214, 226);
+    border: none;
+    box-shadow: 0 0 20px blue;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(235, 41, 67);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+    padding:10px ;
+    margin: 5px;
+
+}
+#send{
+    padding: 10px;
+    margin: 5px;
+
+}
+#send:hover{
+    background-color: rgb(235, 41, 67);
+    color: rgb(44, 7, 255);
+}
